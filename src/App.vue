@@ -18,7 +18,7 @@ export default {
   <AppHeader />
 
   <!-- AppMain -->
-  <!-- <AppMain /> -->
+  <AppMain />
 
   <!-- AppFooter -->
   <!-- <AppFooter /> -->
