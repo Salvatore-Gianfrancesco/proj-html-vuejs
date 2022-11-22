@@ -4,6 +4,7 @@ import MainAboutMe from './MainAboutMe.vue';
 import MainVideo from './MainVideo.vue';
 import MainLatest from './MainLatest.vue';
 import MainBooks from './MainBooks.vue';
+import MainLogos from './MainLogos.vue';
 
 export default {
     name: 'AppMain',
@@ -12,7 +13,8 @@ export default {
         MainAboutMe,
         MainVideo,
         MainLatest,
-        MainBooks
+        MainBooks,
+        MainLogos
     }
 }
 </script>
@@ -33,6 +35,9 @@ export default {
 
         <!-- books -->
         <MainBooks />
+
+        <!-- logos -->
+        <MainLogos />
     </main>
 </template>
 
