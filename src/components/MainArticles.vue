@@ -85,6 +85,12 @@ export default {
         text-decoration: none;
         letter-spacing: 1.5px;
         border-bottom: 3px solid $mt-mountain-meadow;
+        transition: 0.3s;
+
+        &:hover {
+            color: $btn-hover;
+            border-color: $btn-hover;
+        }
     }
 }
 </style>

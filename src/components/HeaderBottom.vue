@@ -23,10 +23,10 @@ export default {
                         </p>
 
                         <!-- button -->
-                        <a href="#" class="text-center rounded-2">
+                        <button type="button" class="btn text-center rounded-2">
                             <span class="pe-3">Get Started For Free</span>
                             <i class="fa-solid fa-arrow-right-long"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -67,17 +67,17 @@ export default {
         color: $mt-corduroy;
     }
 
-    a {
+    button {
         width: 20rem;
         background-color: $mt-mountain-meadow;
         color: $mt-white;
         font-weight: 500;
-        text-decoration: none;
         padding: 1rem 0;
         transition: 0.3s;
 
         &:hover {
             background-color: $btn-hover;
+            color: $mt-white;
         }
     }
 

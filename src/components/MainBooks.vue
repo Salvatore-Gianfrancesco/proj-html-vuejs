@@ -41,7 +41,7 @@ export default {
                         </ul>
 
                         <!-- button -->
-                        <a href="#" class="text-center rounded-2">Get Free Ebook</a>
+                        <button type="button" class="btn text-center rounded-2">Get Free Ebook</button>
                     </div>
                 </div>
 
@@ -128,18 +128,17 @@ export default {
             }
         }
 
-        a {
+        button {
             width: 15rem;
-            background-color: #20ac97;
-            color: #ffffff;
+            background-color: $mt-mountain-meadow;
+            color: $mt-white;
             font-weight: 500;
-            text-decoration: none;
             padding: 1rem 0;
-            display: inline-block;
             transition: 0.3s;
 
             &:hover {
                 background-color: $btn-hover;
+                color: $mt-white;
             }
         }
     }
