@@ -60,7 +60,6 @@ export default {
         }
 
         .description {
-            color: $mt-cinder;
             font-size: 15px;
             letter-spacing: 2px;
             padding-bottom: 1rem;

@@ -1,6 +1,8 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
+    activeStory: 0,
+
     headerLinks: [
         'Home',
         'Pages',
@@ -52,6 +54,36 @@ export const store = reactive({
             title: 'How to be Successfull: Create A Growth Mindset For Success',
             lessons: 3,
             students: 50
+        }
+    ],
+
+    stories: [
+        {
+            src: '01',
+            text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
+            name: 'Mina Hollace',
+            role: 'Freelancer'
+        },
+
+        {
+            src: '02',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ab modi fugit, et accusamus possimus veniam in obcaecati soluta laudantium ipsum.',
+            name: 'Tim Walter',
+            role: 'Personal Trainer'
+        },
+
+        {
+            src: '03',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo voluptate sunt eos aperiam ipsam quos sapiente odio architecto!',
+            name: 'John Doe',
+            role: 'Freelancer'
+        },
+
+        {
+            src: '04',
+            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+            name: 'Paul Williams',
+            role: 'Freelancer'
         }
     ]
 })

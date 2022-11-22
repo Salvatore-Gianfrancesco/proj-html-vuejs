@@ -14,11 +14,8 @@ export default {
 </template>
 
 <style lang='scss'>
-@use '../assets/scss/partials/variables' as *;
-
 .header_social {
     i {
-        color: $mt-cinder;
         padding: 0 0.7rem;
     }
 }

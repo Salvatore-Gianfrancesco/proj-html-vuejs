@@ -53,7 +53,6 @@ export default {
     }
 
     .title {
-        color: $mt-cinder;
         font-family: $font-merriweather;
         font-size: 58px;
 

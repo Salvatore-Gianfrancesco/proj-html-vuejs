@@ -52,8 +52,6 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .header_bottom {
-    color: $mt-cinder;
-
     .wingman {
         font-size: 17px;
         letter-spacing: 1.5px;
