@@ -2,13 +2,15 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import DemoItem from './components/DemoItem.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    DemoItem
   }
 }
 </script>
@@ -23,6 +25,9 @@ export default {
 
   <!-- AppFooter -->
   <AppFooter />
+
+  <!-- demo -->
+  <DemoItem />
 </template>
 
 <style lang='scss'>

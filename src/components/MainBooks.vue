@@ -161,6 +161,12 @@ export default {
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $mt-mountain-meadow;
+                    color: $mt-white;
+                }
             }
         }
 

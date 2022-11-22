@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="header_bottom position-relative">
+    <section class="header_bottom">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-4">
@@ -37,13 +37,6 @@ export default {
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="right_icons d-flex justify-content-center align-items-center flex-column gap-4 py-3">
-            <img src="../assets/img/ruler-triangle-icon.svg" alt="">
-            <img src="../assets/img/circle-stop-icon.svg" alt="">
-            <img src="../assets/img/book-icon.svg" alt="">
-            <img src="../assets/img/cart-icon.svg" alt="">
         </div>
     </section>
 </template>
@@ -87,19 +80,6 @@ export default {
         background-image: url('../assets/img/home-movation-shape-face.png');
         background-repeat: no-repeat;
         background-position: right bottom;
-    }
-
-    .right_icons {
-        width: 40px;
-        background-color: $mt-white;
-        box-shadow: 0 0px 5px -2px;
-        position: absolute;
-        right: 0;
-        top: 10rem;
-
-        img {
-            width: 50%;
-        }
     }
 }
 </style>

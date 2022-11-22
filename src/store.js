@@ -2,6 +2,7 @@ import { reactive } from 'vue'
 
 export const store = reactive({
     activeStory: 0,
+    isShowedDemo: false,
     address: '382 NE 191st St # 87394 Miami, FL 33179-3899',
     contact: '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
     email: 'support@maxcoach.com',
@@ -70,23 +71,23 @@ export const store = reactive({
 
         {
             src: '02',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ab modi fugit, et accusamus possimus veniam in obcaecati soluta laudantium ipsum.',
-            name: 'Tim Walter',
-            role: 'Personal Trainer'
+            text: 'I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to adopt for learners.',
+            name: 'Luvic Dubble',
+            role: 'Private tutor'
         },
 
         {
             src: '03',
-            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo voluptate sunt eos aperiam ipsam quos sapiente odio architecto!',
-            name: 'John Doe',
-            role: 'Freelancer'
+            text: 'I\'m a very strict person so I require everything to be organized and neat.Then, I\'ll be able to make things right and shine. MaxCoach guys just got me.',
+            name: 'Florence Themes',
+            role: 'Multimedia Admin'
         },
 
         {
             src: '04',
-            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-            name: 'Paul Williams',
-            role: 'Freelancer'
+            text: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+            name: 'Madley Pondor',
+            role: 'IT Specialist'
         }
     ],
 
@@ -130,5 +131,7 @@ export const store = reactive({
             title: 'Information',
             links: ['Membership', 'Purchase guide', 'Privacy policy', 'Terms of service']
         }
-    ]
+    ],
+
+    previews: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14']
 })

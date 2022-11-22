@@ -48,7 +48,7 @@ export default {
                 transition: 0.3s;
 
                 &:hover {
-                    color: $mt-white;
+                    color: $mt-mountain-meadow;
                 }
             }
         }

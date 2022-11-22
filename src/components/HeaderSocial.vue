@@ -14,9 +14,17 @@ export default {
 </template>
 
 <style lang='scss'>
+@use '../assets/scss/partials/variables' as *;
+
 .header_social {
     i {
         padding: 0 0.7rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            color: $mt-mountain-meadow;
+        }
     }
 }
 </style>

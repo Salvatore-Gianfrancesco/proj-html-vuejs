@@ -43,6 +43,12 @@ export default {
     img {
         opacity: 30%;
         filter: grayscale(70%);
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 100%;
+            filter: grayscale(0%);
+        }
     }
 }
 </style>
