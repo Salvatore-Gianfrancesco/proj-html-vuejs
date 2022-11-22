@@ -3,6 +3,7 @@ import MainRatings from './MainRatings.vue';
 import MainAboutMe from './MainAboutMe.vue';
 import MainVideo from './MainVideo.vue';
 import MainLatest from './MainLatest.vue';
+import MainBooks from './MainBooks.vue';
 
 export default {
     name: 'AppMain',
@@ -10,7 +11,8 @@ export default {
         MainRatings,
         MainAboutMe,
         MainVideo,
-        MainLatest
+        MainLatest,
+        MainBooks
     }
 }
 </script>
@@ -28,6 +30,9 @@ export default {
 
         <!-- latest courses -->
         <MainLatest />
+
+        <!-- books -->
+        <MainBooks />
     </main>
 </template>
 

@@ -50,34 +50,5 @@ export default {
 </template>
 
 <style lang='scss'>
-@use '../assets/scss/partials/variables' as *;
 
-.col {
-    padding: 1.5rem 1rem;
-}
-
-.card {
-    .card-body {
-        .card-title {
-            color: $mt-mountain-meadow;
-            font-size: 30px;
-            font-weight: 500;
-
-            span {
-                font-size: 24px;
-            }
-        }
-
-        .card-text {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
-        .lessons,
-        .students {
-            color: $mt-corduroy;
-            font-size: 18px;
-        }
-    }
-}
 </style>

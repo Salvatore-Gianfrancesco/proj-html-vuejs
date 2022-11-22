@@ -56,7 +56,7 @@ export default {
 
     .wingman {
         font-size: 17px;
-        letter-spacing: 0.5px;
+        letter-spacing: 1.5px;
     }
 
     h1 {

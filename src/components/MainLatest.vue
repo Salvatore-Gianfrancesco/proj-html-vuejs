@@ -17,7 +17,7 @@ export default {
 
 <template>
     <section class="latest_courses">
-        <!-- begin -->
+        <!-- begin your journey at maxcoach -->
         <div class="begin text-center text-uppercase pb-4">begin your journey at maxcoach</div>
 
         <!-- grid -->
@@ -45,9 +45,11 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .latest_courses {
+    padding-bottom: 7rem;
+
     .begin {
         color: $mt-corduroy;
-        letter-spacing: 0.5px;
+        letter-spacing: 1.5px;
     }
 
     .title {
@@ -57,6 +59,35 @@ export default {
 
         span {
             color: $mt-mountain-meadow;
+        }
+    }
+
+    .col {
+        padding: 1.5rem 1rem;
+
+        .card {
+            .card-body {
+                .card-title {
+                    color: $mt-mountain-meadow;
+                    font-size: 30px;
+                    font-weight: 500;
+
+                    span {
+                        font-size: 24px;
+                    }
+                }
+
+                .card-text {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                .lessons,
+                .students {
+                    color: $mt-corduroy;
+                    font-size: 18px;
+                }
+            }
         }
     }
 
