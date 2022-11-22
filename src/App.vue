@@ -14,6 +14,7 @@ export default {
 </script>
 
 <template>
+  <a name="go_up"></a>
   <!-- AppHeader -->
   <AppHeader />
 
@@ -21,7 +22,7 @@ export default {
   <AppMain />
 
   <!-- AppFooter -->
-  <!-- <AppFooter /> -->
+  <AppFooter />
 </template>
 
 <style lang='scss'>

@@ -11,7 +11,7 @@ export default {
                 <div class="col">
                     <!-- image -->
                     <div class="image position-relative">
-                        <img src="../assets/img/home-movation-video-poster-670x450.jpg" alt="">
+                        <img src="../assets/img/home-movation-video-poster-670x450.jpg" alt="" class="shadow">
 
                         <!-- youtube icon -->
                         <img src="../assets/img/icon-youtube-play.png" alt="" class="youtube_icon">
@@ -45,6 +45,10 @@ export default {
     padding-bottom: 7rem;
 
     .image {
+        .shadow {
+            box-shadow: 0px 80px 170px -110px black !important;
+        }
+
         .youtube_icon {
             position: absolute;
             top: 50%;

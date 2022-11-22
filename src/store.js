@@ -2,6 +2,9 @@ import { reactive } from 'vue'
 
 export const store = reactive({
     activeStory: 0,
+    address: '382 NE 191st St # 87394 Miami, FL 33179-3899',
+    contact: '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
+    email: 'support@maxcoach.com',
 
     headerLinks: [
         'Home',
@@ -111,6 +114,21 @@ export const store = reactive({
             date: 'May 13, 2020',
             title: 'How to Give Yourself Grace to Start Again',
             text: 'Forgive yourself for bad habits you may have started or...'
+        }
+    ],
+
+    footerLinks: [
+        {
+            title: 'Explore',
+            links: ['Start here', 'Blog', 'About us']
+        },
+        {
+            title: '',
+            links: ['Success story', 'Courses', 'Contact us']
+        },
+        {
+            title: 'Information',
+            links: ['Membership', 'Purchase guide', 'Privacy policy', 'Terms of service']
         }
     ]
 })
