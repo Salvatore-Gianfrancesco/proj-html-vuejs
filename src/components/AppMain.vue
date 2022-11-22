@@ -2,13 +2,15 @@
 import MainRatings from './MainRatings.vue';
 import MainAboutMe from './MainAboutMe.vue';
 import MainVideo from './MainVideo.vue';
+import MainLatest from './MainLatest.vue';
 
 export default {
     name: 'AppMain',
     components: {
         MainRatings,
         MainAboutMe,
-        MainVideo
+        MainVideo,
+        MainLatest
     }
 }
 </script>
@@ -23,6 +25,9 @@ export default {
 
         <!-- video -->
         <MainVideo />
+
+        <!-- latest courses -->
+        <MainLatest />
     </main>
 </template>
 

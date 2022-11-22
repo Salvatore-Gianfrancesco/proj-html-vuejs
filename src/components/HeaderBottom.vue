@@ -70,12 +70,17 @@ export default {
     }
 
     a {
-        width: 65%;
+        width: 20rem;
         background-color: $mt-mountain-meadow;
         color: $mt-white;
         font-weight: 500;
         text-decoration: none;
         padding: 1rem 0;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $btn-hover;
+        }
     }
 
     .shape {
