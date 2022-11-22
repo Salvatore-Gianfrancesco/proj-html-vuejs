@@ -45,6 +45,11 @@ export default {
                 color: $mt-silver-sand;
                 font-size: 16px;
                 text-decoration: none;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $mt-white;
+                }
             }
         }
     }

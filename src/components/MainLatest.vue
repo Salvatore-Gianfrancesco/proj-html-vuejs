@@ -87,6 +87,10 @@ export default {
                     font-size: 18px;
                 }
             }
+
+            &:hover {
+                box-shadow: 0px 0px 40px -25px black;
+            }
         }
     }
 

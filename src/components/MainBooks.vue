@@ -48,7 +48,15 @@ export default {
                 <div class="col-7 d-flex justify-content-between gap-4">
                     <div class="card text-center border-0">
                         <!-- image -->
-                        <img src="../assets/img/product-book-10-400x400.jpg" alt="">
+                        <div class="position-relative">
+                            <img src="../assets/img/product-book-10-400x400.jpg" alt="">
+                            <div class="card_hover d-flex flex-column gap-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-signal"></i>
+                            </div>
+                        </div>
 
                         <div class="card-body p-4">
                             <!-- book name -->
@@ -61,7 +69,15 @@ export default {
 
                     <div class="card text-center border-0">
                         <!-- image -->
-                        <img src="../assets/img/product-book-11-400x400.jpg" alt="">
+                        <div class="position-relative">
+                            <img src="../assets/img/product-book-11-400x400.jpg" alt="">
+                            <div class="card_hover d-flex flex-column gap-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-signal"></i>
+                            </div>
+                        </div>
 
                         <div class="card-body p-4">
                             <!-- book name -->
@@ -129,6 +145,26 @@ export default {
     }
 
     .card {
+        .card_hover {
+            position: absolute;
+            top: 50%;
+            right: 35px;
+            transform: translate(0, -50%);
+            visibility: hidden;
+
+            i {
+                width: 45px;
+                aspect-ratio: 1/1;
+                background-color: $mt-white;
+                color: $mt-corduroy;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
         .card-body {
             .card-title {
                 font-size: 24px;
@@ -144,6 +180,10 @@ export default {
                     font-size: 22px;
                 }
             }
+        }
+
+        &:hover .card_hover {
+            visibility: visible;
         }
     }
 }
