@@ -7,15 +7,6 @@ export const store = reactive({
     contact: '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
     email: 'support@maxcoach.com',
 
-    headerLinks: [
-        'Home',
-        'Pages',
-        'Courses',
-        'Features',
-        'Blog',
-        'Shop'
-    ],
-
     courses: [
         {
             id: '01',
@@ -118,15 +109,44 @@ export const store = reactive({
         }
     ],
 
+    headerLinks: [
+        {
+            name: 'Home',
+            dropdown: ['Landing Page', 'Education', 'Multimedia Pedagogy', 'Modern Schooling', 'Gym Coaching', 'Business', 'Kitchen', 'Motivation', 'Yoga', 'Dancing'],
+            visible: false
+        },
+        {
+            name: 'Pages',
+            dropdown: ['Start Here', 'About me', 'Latest Online Courses', 'Book Store', 'Real Stories', 'Posts'],
+            visible: false
+        },
+        {
+            name: 'Courses',
+            dropdown: ['Learn more', 'Our Courses', 'Become a Teacher'],
+            visible: false
+        },
+        {
+            name: 'Features',
+            dropdown: ['Events'],
+            visible: false
+        },
+        {
+            name: 'Blog',
+            dropdown: ['Blog List', 'Writers'],
+            visible: false
+        },
+        {
+            name: 'Shop',
+            dropdown: ['Wishlist', 'Cart', 'Purchase Guide', 'Privacy Policy', 'Terms of Service'],
+            visible: false
+        }
+    ],
+
     footerLinks: [
         {
             title: 'Explore',
             links: ['Start here', 'Blog', 'About us', 'Success story', 'Courses', 'Contact us']
         },
-        /* {
-             title: '',
-             links: ['Success story', 'Courses', 'Contact us']
-         }, */
         {
             title: 'Information',
             links: ['Membership', 'Purchase guide', 'Privacy policy', 'Terms of service']
