@@ -1,24 +1,24 @@
 <script>
-import MainRatings from './MainRatings.vue';
-import MainAboutMe from './MainAboutMe.vue';
-import MainVideo from './MainVideo.vue';
-import MainLatest from './MainLatest.vue';
-import MainBooks from './MainBooks.vue';
-import MainLogos from './MainLogos.vue';
-import MainStories from './MainStories.vue';
-import MainArticles from './MainArticles.vue';
+import RatingsSection from './RatingsSection.vue';
+import AboutMeSection from './AboutMeSection.vue';
+import VideoSection from './VideoSection.vue';
+import LatestSection from './LatestSection.vue';
+import BooksSection from './BooksSection.vue';
+import LogosSection from './LogosSection.vue';
+import StoriesSection from './StoriesSection.vue';
+import ArticlesSection from './ArticlesSection.vue';
 
 export default {
     name: 'AppMain',
     components: {
-        MainRatings,
-        MainAboutMe,
-        MainVideo,
-        MainLatest,
-        MainBooks,
-        MainLogos,
-        MainStories,
-        MainArticles
+        RatingsSection,
+        AboutMeSection,
+        VideoSection,
+        LatestSection,
+        BooksSection,
+        LogosSection,
+        StoriesSection,
+        ArticlesSection
     }
 }
 </script>
@@ -26,28 +26,28 @@ export default {
 <template>
     <main>
         <!-- ratings -->
-        <MainRatings />
+        <RatingsSection />
 
         <!-- about me -->
-        <MainAboutMe />
+        <AboutMeSection />
 
         <!-- video -->
-        <MainVideo />
+        <VideoSection />
 
         <!-- latest courses -->
-        <MainLatest />
+        <LatestSection />
 
         <!-- books -->
-        <MainBooks />
+        <BooksSection />
 
         <!-- logos -->
-        <MainLogos />
+        <LogosSection />
 
         <!-- stories -->
-        <MainStories />
+        <StoriesSection />
 
         <!-- articles -->
-        <MainArticles />
+        <ArticlesSection />
     </main>
 </template>
 

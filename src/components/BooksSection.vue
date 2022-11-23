@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'MainBooks'
+    name: 'BooksSection'
 }
 </script>
 
@@ -50,6 +50,7 @@ export default {
                         <!-- image -->
                         <div class="position-relative">
                             <img src="../assets/img/product-book-10-400x400.jpg" alt="">
+
                             <div class="card_hover d-flex flex-column gap-2">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -71,6 +72,7 @@ export default {
                         <!-- image -->
                         <div class="position-relative">
                             <img src="../assets/img/product-book-11-400x400.jpg" alt="">
+
                             <div class="card_hover d-flex flex-column gap-2">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -100,89 +102,90 @@ export default {
     padding-bottom: 7rem;
 
     .text {
-        padding-right: 7rem;
-
         div {
-            color: $mt-corduroy;
-            letter-spacing: 1.5px;
+            font-size: 15px;
+            letter-spacing: 2px;
         }
 
         h2 {
-            font-family: $font-merriweather;
-            font-size: 48px;
+            font-family: $font-serif;
+            color: $mt-secondary;
+            font-size: 40px;
+            line-height: 1.5;
+            padding-right: 7rem;
 
             span {
-                color: $mt-mountain-meadow;
+                color: $mt-primary;
             }
         }
 
         ul {
             list-style: none;
-            font-size: 17px;
+            font-size: 14px;
             padding-left: 0.5rem;
 
             li {
+                color: $mt-gray;
+
                 i {
-                    color: $mt-mountain-meadow;
+                    color: $mt-primary;
                 }
             }
         }
 
         button {
-            width: 15rem;
-            background-color: $mt-mountain-meadow;
-            color: $mt-white;
+            width: 12rem;
+            background-color: $mt-primary;
+            color: $mt-light;
             font-weight: 500;
             padding: 1rem 0;
-            transition: 0.3s;
 
             &:hover {
-                background-color: $btn-hover;
-                color: $mt-white;
+                background-color: $mt-secondary;
+                color: $mt-light;
             }
         }
     }
 
     .card {
+        .card-body {
+            .card-title {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .card-text {
+                color: $mt-primary;
+                font-size: 24px;
+                font-weight: 500;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+
         .card_hover {
             position: absolute;
             top: 50%;
-            right: 35px;
+            right: 2rem;
             transform: translate(0, -50%);
             visibility: hidden;
 
             i {
                 width: 45px;
                 aspect-ratio: 1/1;
-                background-color: $mt-white;
-                color: $mt-corduroy;
+                background-color: $mt-light;
+                color: $mt-gray;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
-                transition: 0.3s;
 
                 &:hover {
-                    background-color: $mt-mountain-meadow;
-                    color: $mt-white;
-                }
-            }
-        }
-
-        .card-body {
-            .card-title {
-                font-size: 24px;
-                font-weight: 500;
-            }
-
-            .card-text {
-                color: $mt-mountain-meadow;
-                font-size: 26px;
-                font-weight: 500;
-
-                span {
-                    font-size: 22px;
+                    background-color: $mt-primary;
+                    color: $mt-light;
                 }
             }
         }

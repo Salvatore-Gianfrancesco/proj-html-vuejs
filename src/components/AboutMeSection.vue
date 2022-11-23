@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'MainAboutMe'
+    name: 'AboutMeSection'
 }
 </script>
 
@@ -20,6 +20,7 @@ export default {
                         you've always
                         wanted to be?
                     </p>
+
                     <p class="how_to_answer">
                         Your goal is to show the consistency of business, core values, and customer care. Punctuality,
                         responsibility, individuality, accuracy, enthusiasm - you have to clearly explain how these
@@ -38,29 +39,30 @@ export default {
     padding-bottom: 7rem;
 
     .about {
-        color: $mt-mountain-meadow;
-        font-size: 14px;
-        letter-spacing: 2.5px;
+        color: $mt-primary;
+        font-size: 15px;
+        letter-spacing: 2px;
     }
 
     .how_to_title {
-        font-family: $font-merriweather;
+        font-family: $font-serif;
         font-size: 40px;
-        letter-spacing: 0.5px;
+        line-height: 1.5;
         padding-right: 15rem;
     }
 
     .how_to_question {
         font-weight: 500;
+        line-height: 1.7;
 
         span {
-            color: $mt-mountain-meadow;
+            color: $mt-primary;
         }
     }
 
     .how_to_answer {
-        color: $mt-corduroy;
-        font-size: 17px;
+        color: $mt-gray;
+        font-size: 15px;
     }
 }
 </style>

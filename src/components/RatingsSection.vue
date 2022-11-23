@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'MainRatings'
+    name: 'RatingsSection'
 }
 </script>
 
@@ -47,23 +47,32 @@ export default {
 .ratings {
     padding-bottom: 7rem;
 
-    .col {
-        border: 1px solid;
-        border-image-source: url('../assets/img/background-pattern-grid-line-06.png');
-        border-image-slice: 0 1;
+    .row {
+        background-image: linear-gradient(#20ac9730 70%, $mt-light 0%);
+        background-size: 1.2px 7px;
+        background-position: right;
+        background-repeat: repeat-y;
 
-        .number {
-            color: $mt-mountain-meadow;
-            font-size: 36px;
-            font-weight: 500;
-            padding-top: 1rem;
-        }
+        .col {
+            background-image: linear-gradient(#20ac9730 70%, $mt-light 0%);
+            background-size: 1.2px 7px;
+            background-position: left;
+            background-repeat: repeat-y;
 
-        .description {
-            font-size: 15px;
-            letter-spacing: 2px;
-            padding-bottom: 1rem;
+            .number {
+                color: $mt-primary;
+                font-size: 38px;
+                font-weight: 500;
+                padding-top: 1rem;
+            }
+
+            .description {
+                font-size: 17px;
+                letter-spacing: 2px;
+                padding-bottom: 1rem;
+            }
         }
     }
+
 }
 </style>

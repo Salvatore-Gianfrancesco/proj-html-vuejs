@@ -3,7 +3,7 @@ import CourseItem from './CourseItem.vue';
 import { store } from '../store.js';
 
 export default {
-    name: 'MainLatest',
+    name: 'LatestSection',
     components: {
         CourseItem
     },
@@ -48,16 +48,17 @@ export default {
     padding-bottom: 7rem;
 
     .begin {
-        color: $mt-corduroy;
-        letter-spacing: 1.5px;
+        color: $mt-gray;
+        font-size: 15px;
+        letter-spacing: 2px;
     }
 
     .title {
-        font-family: $font-merriweather;
-        font-size: 58px;
+        font-family: $font-serif;
+        font-size: 48px;
 
         span {
-            color: $mt-mountain-meadow;
+            color: $mt-primary;
         }
     }
 
@@ -65,46 +66,53 @@ export default {
         padding: 1.5rem 1rem;
 
         .card {
+            transition: 0.3s;
+
             .card-body {
                 .card-title {
-                    color: $mt-mountain-meadow;
-                    font-size: 30px;
+                    color: $mt-primary;
+                    font-size: 24px;
                     font-weight: 500;
 
                     span {
-                        font-size: 24px;
+                        font-size: 18px;
                     }
                 }
 
                 .card-text {
-                    font-size: 24px;
+                    font-size: 20px;
                     font-weight: 500;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $mt-primary;
+                    }
                 }
 
                 .lessons,
                 .students {
-                    color: $mt-corduroy;
-                    font-size: 18px;
+                    color: $mt-gray;
+                    font-size: 14px;
                 }
             }
 
             &:hover {
-                box-shadow: 0px 0px 40px -25px black;
+                box-shadow: 0px 0px 40px -25px $mt-gray;
             }
         }
     }
 
     button {
-        width: 20rem;
-        background-color: $mt-mountain-meadow;
-        color: $mt-white;
+        width: 16rem;
+        background-color: $mt-primary;
+        color: $mt-light;
         font-weight: 500;
         padding: 1rem 0;
-        transition: 0.3s;
 
         &:hover {
-            background-color: $btn-hover;
-            color: $mt-white;
+            background-color: $mt-secondary;
+            color: $mt-light;
         }
     }
 }

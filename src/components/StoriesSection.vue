@@ -2,7 +2,7 @@
 import { store } from '../store.js';
 
 export default {
-    name: 'MainStories',
+    name: 'StoriesSection',
     data() {
         return {
             store
@@ -78,28 +78,30 @@ export default {
         height: 100%;
         background-color: $bg-header;
         background-image: url('../assets/img/background-pattern-wavify.png');
-        padding: 0 16rem;
 
         .real_stories {
-            color: $mt-mountain-meadow;
-            letter-spacing: 1.5px;
+            color: $mt-primary;
+            font-size: 15px;
+            letter-spacing: 2px;
         }
 
         p {
-            font-size: 26px;
+            font-size: 24px;
+            padding: 0 8rem;
         }
 
         img {
-            width: 6rem;
+            width: 80px;
+            aspect-ratio: 1/1;
         }
 
         h5 {
-            letter-spacing: 1.5px;
+            font-size: 20px;
         }
 
         .role {
-            color: $mt-corduroy;
-            font-size: 17px;
+            color: $mt-gray;
+            font-size: 14px;
         }
     }
 

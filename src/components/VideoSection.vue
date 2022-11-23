@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'MainVideo'
+    name: 'VideoSection'
 }
 </script>
 
@@ -8,28 +8,33 @@ export default {
     <section class="video">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-7">
                     <!-- image -->
                     <div class="image position-relative">
-                        <img src="../assets/img/home-movation-video-poster-670x450.jpg" alt="" class="shadow">
+                        <img src="../assets/img/home-movation-video-poster-670x450.jpg" alt="testimonial"
+                            class="shadow w-100">
 
                         <!-- youtube icon -->
-                        <img src="../assets/img/icon-youtube-play.png" alt="" class="youtube_icon">
+                        <img src="../assets/img/icon-youtube-play.png" alt="youtube_logo" class="youtube_icon">
                     </div>
                 </div>
 
                 <!-- text -->
-                <div class="col">
+                <div class="col-5">
                     <div class="text h-100 d-flex flex-column justify-content-center">
+                        <!-- quote -->
                         <p class="pb-5">
                             "Every morning you have two choices: continue to sleep with your dreams, or wake up and
                             chase them."
                         </p>
 
+                        <!-- photo -->
                         <img src="../assets/img/home-movation-shape-01.png" alt="">
 
+                        <!-- name -->
                         <div class="author py-3">Kaixa Stark</div>
 
+                        <!-- wingman -->
                         <div class="text-uppercase wingman">wingman</div>
                     </div>
                 </div>
@@ -46,7 +51,7 @@ export default {
 
     .image {
         .shadow {
-            box-shadow: 0px 80px 170px -110px black !important;
+            box-shadow: 0px 80px 170px -110px $mt-dark !important;
         }
 
         .youtube_icon {
@@ -61,8 +66,8 @@ export default {
         padding: 0 7rem;
 
         p {
-            font-family: $font-merriweather;
-            font-size: 30px;
+            font-family: $font-serif;
+            font-size: 24px;
         }
 
         img {
@@ -75,8 +80,9 @@ export default {
         }
 
         .wingman {
-            color: $mt-corduroy;
-            font-size: 15px;
+            color: $mt-gray;
+            font-size: 12px;
+            letter-spacing: 1.5px;
         }
     }
 }
