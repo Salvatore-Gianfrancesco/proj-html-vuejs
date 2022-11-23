@@ -14,16 +14,17 @@ export default {
 <template>
     <div class="footer_info">
         <div class="container-fluid">
-            <div class="row justify-content-start">
-                <div class="col-3" v-for="links in store.footerLinks">
+            <div class="row row-cols-2">
+                <div class="col" v-for="links in store.footerLinks">
                     <h5 class="pb-1">{{ links.title }}</h5>
 
-                    <ul class="p-0">
-                        <li class="py-2" v-for="link in links.links">
+                    <ul class="p-0" :class="(links.title === 'Explore') ? 'column-count-2' : ''">
+                        <li class="py-1" v-for="link in links.links">
                             <a href="#">{{ link }}</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
@@ -34,7 +35,7 @@ export default {
 
 .footer_info {
     h5 {
-        min-height: 28px;
+        min-height: 18px;
     }
 
     ul {
@@ -42,15 +43,18 @@ export default {
 
         li {
             a {
-                color: $mt-silver-sand;
-                font-size: 16px;
+                color: $mt-light-gray;
+                font-size: 14px;
                 text-decoration: none;
-                transition: 0.3s;
 
                 &:hover {
-                    color: $mt-mountain-meadow;
+                    color: $mt-primary;
                 }
             }
+        }
+
+        &.column-count-2 {
+            column-count: 2;
         }
     }
 }

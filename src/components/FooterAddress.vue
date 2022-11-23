@@ -14,10 +14,17 @@ export default {
 <template>
     <div class="footer_address d-flex flex-column gap-1">
         <h5>Address</h5>
+
+        <!-- address -->
         <p>{{ store.address }}</p>
+
+        <!-- contact -->
         <p>{{ store.contact }}</p>
+
+        <!-- email -->
         <a href="#" class="pb-4">{{ store.email }}</a>
 
+        <!-- social -->
         <div class="footer_social d-flex gap-4">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -32,34 +39,34 @@ export default {
 
 .footer_address {
     h5 {
+        font-size: 18px;
         font-weight: 500;
     }
 
     p {
-        color: $mt-silver-sand;
-        font-size: 16px;
+        color: $mt-light-gray;
+        font-size: 14px;
     }
 
     a {
-        color: $mt-silver-sand;
+        color: $mt-light-gray;
+        font-size: 14px;
         text-decoration: none;
         display: inline-block;
-        transition: 0.3s;
 
         &:hover {
-            color: $mt-mountain-meadow;
+            color: $mt-primary;
         }
     }
 
     .footer_social {
         i {
-            color: $mt-silver-sand;
-            font-size: 26px;
+            color: $mt-light-gray;
+            font-size: 24px;
             cursor: pointer;
-            transition: 0.3s;
 
             &:hover {
-                color: $mt-white;
+                color: $mt-light;
             }
         }
     }

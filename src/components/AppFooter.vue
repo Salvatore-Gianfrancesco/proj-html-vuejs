@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <footer class="position-relative">
+    <footer class="p-5 position-relative">
         <div class="container">
             <div class="row row-cols-2">
                 <div class="col">
@@ -43,20 +43,19 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 footer {
-    background-color: $mt-cinder;
-    color: $mt-white;
-    padding: 5rem 0;
+    background-color: $bg-footer;
+    color: $mt-light;
 
     .copy {
-        color: $mt-silver-sand;
-        font-size: 16px;
+        color: $mt-light-gray;
+        font-size: 14px;
     }
 
     .go_up {
         width: 60px;
         aspect-ratio: 1/1;
-        background-color: $mt-mountain-meadow;
-        color: $mt-white;
+        background-color: $mt-primary;
+        color: $mt-light;
         text-decoration: none;
         display: inline-block;
         position: absolute;
@@ -65,7 +64,7 @@ footer {
         transition: 0.3s;
 
         &:hover {
-            background-color: $btn-hover;
+            background-color: $mt-secondary;
         }
     }
 }

@@ -112,7 +112,7 @@ export default {
     }
 
     .carousel {
-        background-color: $mt-white;
+        background-color: $mt-light;
         padding: 1rem 2rem;
         position: absolute;
         top: 50%;

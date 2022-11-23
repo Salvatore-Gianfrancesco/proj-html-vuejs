@@ -18,14 +18,15 @@ export default {
 
 <template>
     <section class="demo">
-        <div class="demo_button d-flex justify-content-center align-items-center flex-column rounded-2">
+        <div class="demo_button d-flex justify-content-center align-items-center flex-column rounded-2"
+            v-if="!store.isShowedDemo">
             <i class="fa-solid fa-ruler" @click="ShowDemo()"></i>
             <i class="fa-solid fa-life-ring"></i>
             <i class="fa-solid fa-book"></i>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
-        <div class="demo_sidebar d-flex flex-column align-items-center gap-4 p-5" v-if="store.isShowedDemo">
+        <div class="demo_sidebar d-flex flex-column align-items-center gap-4 py-5 px-4" v-if="store.isShowedDemo">
             <h5 class="text-center text-uppercase">MaxCoach - Online Learning and Education WordPress Theme</h5>
 
             <button type="button" class="btn text-center rounded-2">
@@ -52,7 +53,7 @@ export default {
 
 .demo {
     .demo_button {
-        background-color: $mt-white;
+        background-color: $mt-light;
         position: fixed;
         right: 0;
         top: 30vh;
@@ -69,37 +70,49 @@ export default {
 
     .demo_sidebar {
         height: 100vh;
-        width: 400px;
-        background-color: $mt-white;
+        width: 20rem;
+        background-color: $mt-light;
         position: fixed;
         top: 0;
         right: 0;
         overflow-y: auto;
 
-        i {
+        h5 {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        i.fa-xmark {
             position: absolute;
             top: 20px;
             right: 20px;
             cursor: pointer;
+
+            &:hover {
+                color: $mt-primary;
+            }
         }
 
         button {
-            width: 50%;
-            background-color: $mt-mountain-meadow;
-            color: $mt-white;
+            width: 55%;
+            background-color: $mt-primary;
+            color: $mt-light;
             font-weight: 500;
-            padding: 1rem 0;
-            transition: 0.3s;
+            padding: 0.6rem 0;
 
             &:hover {
-                background-color: $btn-hover;
-                color: $mt-white;
+                background-color: $mt-secondary;
+                color: $mt-light;
             }
         }
 
         .preview {
+            box-shadow: 0px 0px 40px -25px $mt-gray;
+            cursor: pointer;
+
             &:hover {
-                box-shadow: 0px 0px 40px -25px black;
+                box-shadow: 0px 0px 40px -25px $bg-footer;
             }
         }
 

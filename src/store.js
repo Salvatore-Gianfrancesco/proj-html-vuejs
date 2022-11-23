@@ -121,12 +121,12 @@ export const store = reactive({
     footerLinks: [
         {
             title: 'Explore',
-            links: ['Start here', 'Blog', 'About us']
+            links: ['Start here', 'Blog', 'About us', 'Success story', 'Courses', 'Contact us']
         },
-        {
-            title: '',
-            links: ['Success story', 'Courses', 'Contact us']
-        },
+        /* {
+             title: '',
+             links: ['Success story', 'Courses', 'Contact us']
+         }, */
         {
             title: 'Information',
             links: ['Membership', 'Purchase guide', 'Privacy policy', 'Terms of service']

@@ -55,7 +55,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 main {
-    background-color: $mt-white;
+    background-color: $mt-light;
     padding: 7rem 0;
 }
 </style>
