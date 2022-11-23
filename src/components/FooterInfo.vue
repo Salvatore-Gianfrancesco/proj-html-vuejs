@@ -35,7 +35,7 @@ export default {
 
 .footer_info {
     h5 {
-        min-height: 18px;
+        font-size: 18px;
     }
 
     ul {

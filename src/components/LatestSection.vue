@@ -110,9 +110,10 @@ export default {
         font-weight: 500;
         padding: 1rem 0;
 
-        &:hover {
-            background-color: $mt-secondary;
-            color: $mt-light;
+        &:hover,
+        &:active {
+            background-color: $mt-secondary !important;
+            color: $mt-light !important;
         }
     }
 }

@@ -3,6 +3,7 @@ import { reactive } from 'vue'
 export const store = reactive({
     activeStory: 0,
     isShowedDemo: false,
+    previewNumbers: 14,
     address: '382 NE 191st St # 87394 Miami, FL 33179-3899',
     contact: '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
     email: 'support@maxcoach.com',
@@ -151,7 +152,5 @@ export const store = reactive({
             title: 'Information',
             links: ['Membership', 'Purchase guide', 'Privacy policy', 'Terms of service']
         }
-    ],
-
-    previews: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14']
+    ]
 })

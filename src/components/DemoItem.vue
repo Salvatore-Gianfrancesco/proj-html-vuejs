@@ -5,19 +5,31 @@ export default {
     name: 'DemoItem',
     data() {
         return {
-            store
+            store,
+            previews: []
         }
     },
     methods: {
         ShowDemo() {
             store.isShowedDemo = !store.isShowedDemo;
         }
+    },
+    mounted() {
+        for (let i = 1; i <= store.previewNumbers; i++) {
+            if (i < 10) {
+                this.previews.push('0' + i.toString());
+            } else {
+                this.previews.push(i.toString());
+            }
+        }
+        // console.log(this.previews);
     }
 }
 </script>
 
 <template>
     <section class="demo">
+        <!-- demo button -->
         <div class="demo_button d-flex justify-content-center align-items-center flex-column rounded-2"
             v-if="!store.isShowedDemo">
             <i class="fa-solid fa-ruler" @click="ShowDemo()"></i>
@@ -26,16 +38,20 @@ export default {
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
+        <!-- demo sidebar -->
         <div class="demo_sidebar d-flex flex-column align-items-center gap-4 py-5 px-4" v-if="store.isShowedDemo">
+            <!-- title -->
             <h5 class="text-center text-uppercase">MaxCoach - Online Learning and Education WordPress Theme</h5>
 
+            <!-- button -->
             <button type="button" class="btn text-center rounded-2">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span class="ps-3">Buy Now</span>
             </button>
 
+            <!-- grid -->
             <div class="row row-cols-2 g-3">
-                <div class="col" v-for="preview in store.previews">
+                <div class="col" v-for="preview in this.previews">
                     <div>
                         <img :src="`../src/assets/img/home-${preview}-preview.jpg`" :alt="preview"
                             class="preview w-100">
@@ -43,6 +59,7 @@ export default {
                 </div>
             </div>
 
+            <!-- close mark -->
             <i class="fa-solid fa-xmark" @click="ShowDemo()"></i>
         </div>
     </section>

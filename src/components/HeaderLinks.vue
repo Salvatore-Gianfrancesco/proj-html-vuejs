@@ -10,12 +10,6 @@ export default {
     },
     methods: {
         showDropdown(i) {
-            // store.headerLinks[i].visible = !store.headerLinks[i].visible;
-
-            /* for (let j = 0; j < store.headerLinks.length; j++) {
-                store.headerLinks[j].visible = false
-            } */
-
             if (store.headerLinks[i].visible) {
                 store.headerLinks[i].visible = false;
             } else {
@@ -25,7 +19,6 @@ export default {
 
                 store.headerLinks[i].visible = true;
             }
-
         }
     }
 }

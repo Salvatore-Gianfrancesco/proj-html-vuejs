@@ -72,9 +72,10 @@ export default {
             padding: 1rem 0;
             transition: 0.3s;
 
-            &:hover {
-                background-color: $mt-secondary;
-                color: $mt-light;
+            &:hover,
+            &:active {
+                background-color: $mt-secondary !important;
+                color: $mt-light !important;
             }
         }
     }
