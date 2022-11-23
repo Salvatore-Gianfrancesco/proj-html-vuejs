@@ -20,10 +20,9 @@ export default {
     i {
         padding: 0 0.7rem;
         cursor: pointer;
-        transition: 0.3s;
 
         &:hover {
-            color: $mt-mountain-meadow;
+            color: $mt-primary;
         }
     }
 }

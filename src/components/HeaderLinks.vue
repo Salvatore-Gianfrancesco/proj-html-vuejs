@@ -24,16 +24,15 @@ export default {
 
 .header_links {
     a {
-        color: $mt-cinder;
+        color: $mt-secondary;
         text-decoration: none;
         padding: 0 1.2rem;
-        transition: 0.3s;
 
         .dropdown_icon {
-            width: 6px;
+            width: 5px;
             aspect-ratio: 1/1;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
+            border-bottom: 1px solid $mt-secondary;
+            border-right: 1px solid $mt-secondary;
             rotate: 45deg;
             display: inline-block;
             transform: translate(-50%, -50%);
@@ -41,12 +40,12 @@ export default {
         }
 
         &:hover {
-            color: $mt-mountain-meadow;
-            border-bottom: 1px solid $mt-mountain-meadow;
+            color: $mt-primary;
+            border-bottom: 1px solid $mt-primary;
         }
 
         &:hover .dropdown_icon {
-            border-color: $mt-mountain-meadow;
+            border-color: $mt-primary;
         }
     }
 }

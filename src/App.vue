@@ -16,7 +16,9 @@ export default {
 </script>
 
 <template>
+  <!-- footer arrow destination -->
   <a name="go_up"></a>
+
   <!-- AppHeader -->
   <AppHeader />
 
